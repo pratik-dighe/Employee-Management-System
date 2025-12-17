@@ -1,0 +1,41 @@
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+.nm{
+  font-size:x-large;
+}
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 6px 10px;
+}
+
+p{
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
+.blood{
+  color: red;
+}

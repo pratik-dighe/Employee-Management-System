@@ -1,0 +1,28 @@
+<div class="container" *ngIf="!isLoading && user">
+  <h2>Employee Details</h2>
+  <img [src]="user.image" alt="Profile" width="120" height="120" />
+
+  <p><strong>ID:</strong> {{ user.id }}</p>
+  <p class="nm"><strong>Name:</strong> {{ user.firstName }} {{ user.lastName }}</p>
+  <p><strong>Age:</strong> {{ user.age }}</p>
+  <p><strong>Gender:</strong> {{ user.gender }}</p>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Phone:</strong> {{ user.phone }}</p>
+  <p><strong>Address:</strong> {{ user.address.address}}</p>
+  <p><strong>City:</strong> {{ user.address?.city }}</p>
+  <p><strong>State:</strong> {{user.address.state}}</p>
+  <p><strong>Country:</strong> {{user.address.country }}</p>
+  <p class="blood"><strong style="color: black;">Blood Group:</strong> {{ user.bloodGroup }}</p>
+  <p><strong>Birth Date:</strong> {{ user.birthDate }}</p>
+  <p><strong>Department:</strong> {{ user.company.department }}</p>
+  <p><strong>Title:</strong> {{ user.company.title}}</p>
+  <p><strong>Role:</strong> {{ user.role }}</p>
+
+  <div class="buttons">
+    <button routerLink="/">Back to List</button>
+    <button (click)="exportToPDF()">Download PDF</button>
+    <button (click)="exportToExcel()">Download Excel</button>
+  </div>
+</div>
+
+<div *ngIf="isLoading">Loading user details...</div>
