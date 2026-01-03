@@ -1,3 +1,8 @@
+h2{
+  text-align: center;
+  justify-content: center;
+}
+
 .container {
   width: 90%;
   margin: 20px auto;
@@ -10,7 +15,11 @@
   margin-bottom: 15px;
 }
 
-input,
+input{
+  width: 1560px;
+  padding: 15px;
+}
+
 select,
 button {
   padding: 6px 10px;
